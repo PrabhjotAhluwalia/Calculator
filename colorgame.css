@@ -1,0 +1,71 @@
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat","Avenir";
+}
+
+.square{
+    width:30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.5s; /*here the transition will work only on background value change */
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+}
+#stripe{
+    background:white;
+    height: 30px;
+    text-align: center;
+}
+#container{
+    margin: 20px auto;  /* 20px on top , bottom and then 'auto' to make centered i.e equal left and right just to make centered*/
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.selected{
+    background: steelblue;
+    color:white;
+}
+
+#colorDisplay{
+    font-size:200%
+}
+
+button{
+    border:none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size:inherit;
+    transition: all 0.3s;   /* Used to set how much time the particular property takes for value change */
+    -webkit-transition:all 0.3s;  /* webkit and moz are used to support transition in browsers like firefox*/
+    -moz-transition:all 0.3s;
+    outline: none;
+}
+
+button:hover{
+    background: steelblue;
+    color:white;
+}
+
+#message{
+    display: inline-block;
+    width:20%   /* 20% of the parent element*/
+}
